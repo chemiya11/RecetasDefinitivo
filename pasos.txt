@@ -1,0 +1,21 @@
+opciones:
+Fly.io: si base
+Cloudfare workers
+Github pages
+Vercel: no base
+Netlify
+Render: si base
+Railway: si base
+
+despliegue en railway:
+subir a git el proyecto de node
+creamos proyecto en railway con el repositorio de github
+add variables
+creamos poryecto de mysql en railway
+ponemos en el proyecto de node las variables del proyecto de mysql
+db_user en proyecto node con el valor de la variable del proyecto de mysql
+db_host, name, password, port
+generar dominio en el proyecto de node
+en proyecto mysql script para crear tabla
+y en reiniciar el proyecto de node
+ir al enlace con rutas /create /ping

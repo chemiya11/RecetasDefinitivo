@@ -1,0 +1,3 @@
+Ng build –configuration production
+Cojo la carpeta dist y lo de dentro lo muevo al proyecto de node
+app.use(express.static("frontend"));
