@@ -5,9 +5,10 @@ dotenv.config()
 import cors from "cors"
 const app = express()//llamo de express
 
-app.use(cors())
-app.use(express.static("frontend"));
-//prueba
+app.use(cors())//llamo cors
+
+app.use(express.static("frontend"));//parte de angular
+
 app.get('/busqueda', async (req, res) => {//ruta / hago consulta para ver usuarios y devuelvo json
   const [rows] = await pool.query('SELECT * FROM users')
   res.json(rows)
