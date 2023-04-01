@@ -1,6 +1,7 @@
 import express from 'express'
 import { pool } from './db.js'
-import {PORT} from './config.js'
+import dotenv from 'dotenv'
+dotenv.config()
 import cors from "cors"
 const app = express()//llamo de express
 
@@ -22,5 +23,5 @@ app.get('/create', async (req, res) => {//crea usuario
   res.json(result)
 })
 
-app.listen(PORT)//pongo a escuchar en el puerto
-console.log('Server on port', PORT)
+app.listen(process.env.PORT)//pongo a escuchar en el puerto
+console.log('Server on port', process.env.PORT)
